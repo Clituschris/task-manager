@@ -1,0 +1,61 @@
+.task-card {
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 1px #acacac;
+    margin-bottom: 1.5vw;
+
+    .title {
+        font-weight: 700;
+        margin-bottom: 1vw;
+    }
+
+    .summary {
+        font-size: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .footer-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-size: 0.75vw;
+            color: #acacac;
+        }
+
+        .buttons-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5vw;
+
+            button{
+                border: none;
+                padding: 0.5vw;
+                font-size: 0.75vw;
+                color: white;
+                border-radius: 0.5em;
+                cursor: pointer;
+            }
+
+            .ToDo-button{
+                background-color: #606977;
+            }
+            .InProgress-button{
+                background-color: #5A51E2;
+            }
+            .Review-button{
+                background-color: #D66615;
+            }
+            .Completed-button{
+                background-color: #008141;
+            }
+        }
+
+    }
+}

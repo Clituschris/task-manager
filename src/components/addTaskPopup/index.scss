@@ -1,0 +1,69 @@
+.popup-mask {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000050;
+
+    .popup {
+        background-color: white;
+        padding: 1vw;
+        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+        min-width: 30vw;
+
+        .title {
+            font-size: 1.5vw;
+            margin-bottom: 1vw;
+        }
+
+        label {
+            margin-bottom: 0.5vw;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1vw;
+            padding: 0.5vw 0.25vw;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .buttons-layout {
+            display: flex;
+            gap: 1vw;
+            justify-content: flex-end;
+
+            button{
+                padding: 0.5vw 1vw;
+                border: none;
+                color: white;
+                border-radius: 0.5em;
+                cursor: pointer;
+            }
+
+            .cancel-button{
+                background-color: #D66615;
+            }
+
+            .add-button{
+                background-color: #008141;
+                &:disabled{
+                    background-color: #606977;
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+    }
+}

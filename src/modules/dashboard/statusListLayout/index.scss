@@ -1,0 +1,16 @@
+.status-list-layout {
+    width: 25%;
+    padding: 0 2vw;
+    .status-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+        font-size: 1.5vw;
+
+        .count{
+            font-size: 1.25vw;
+            color: #7e7e7e;
+        }
+    }
+}
